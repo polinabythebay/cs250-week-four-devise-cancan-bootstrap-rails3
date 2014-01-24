@@ -1,6 +1,8 @@
 Practice creating a Rails3 application using Devise with CanCan and Twitter Bootstrap
 
 Devise: authentication and user management
+
 CanCan: authorization which restricts resources a user is allowed to access
+
 Twitter Bootstrap: front-end framework for CSS styling
 

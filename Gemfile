@@ -1,6 +1,5 @@
 #my cute little gems 
-#the style is not eye pleasing bc it's generated using
-#rails composer gem
+
 
 source 'https://rubygems.org'
 gem 'rails', '3.2.13'
@@ -27,3 +26,10 @@ gem "quiet_assets", ">= 1.0.1", :group => :development
 gem "figaro", ">= 0.5.0"
 gem "better_errors", ">= 0.2.0", :group => :development
 gem "binding_of_caller", ">= 0.6.8", :group => :development
+
+#for deploying to heroku 
+group :production do
+  gem 'pg'
+  gem 'thin'
+  #gem 'rails_12factor' not sure if I need this for Rails3
+end

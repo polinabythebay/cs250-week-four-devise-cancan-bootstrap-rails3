@@ -6,6 +6,9 @@
 #all other users will just see home page
 
 Rails3BootstrapDeviseCancan::Application.routes.draw do
+
+  #get "/pages/*id" => 'pages#show'
+
   authenticated :user do
     root :to => 'home#index'
   end
